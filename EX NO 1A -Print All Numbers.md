@@ -1,59 +1,39 @@
 
 # EX 1A Print All Numbers 
+## DATE: 07/8/2025
 ## AIM:
 To Write a Java program that takes an integer input N from the user and prints all the numbers from 1 to N, separated by spaces, on a single line..
 
 ## Algorithm
-1.Start the program.
+1. Start the program and import the `Scanner` class to take user input.
+2. Create a `Scanner` object to read an integer input `N` from the user.
+3. Check if `N` is greater than 0; if not, display `"Invalid input. N must be greater than 0."`
+4. Use a `for` loop to iterate from 1 to `N`.
+5. Print each number separated by a space on the same line.
 
-2.Input an integer N from the user.
-
-3.Check condition:
-If N <= 0, display "Invalid input. N must be greater than 0." and stop.
-
-4.Initialize a variable i = 1.
-
-5.Use a loop to print numbers from 1 to N:
-
-While i <= N, print i followed by a space.
-
-Increment i by 1.
-
-End loop and stop the program. 
- 
 
 ## Program:
 ```
 /*
 Program to implement Reverse a String
-Developed by: N.Navya Sree
-Register Number:  212223040138
+Developed by: Malyadri Reddy N
+Register Number: 212223100037 
 */
 
-import java.util.*; 
-public class demo   
-{
-    public static void main(String args[]) 
-    {
-        int N,i;
+import java.util.*;
+public class PrintNum{
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        N=sc.nextInt();  
-        if(N<=0)
-        {
-            System.out.println("Invalid input. N must be greater than 0.");
-            
-        }
-        else{
-            for(i=1;i<=N;i++){
-                System.out.print(i+" ");    
-            }
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            System.out.print(i+" ");
         }
     }
 }
 ```
 
 ## Output:
-<img width="425" height="152" alt="image" src="https://github.com/user-attachments/assets/54163f54-8ab1-4383-ad7b-35428ac584b3" />
+<img width="491" height="159" alt="image" src="https://github.com/user-attachments/assets/ef5e3fdf-c4da-46c2-b207-43343d9ccad8" />
 
 
 
